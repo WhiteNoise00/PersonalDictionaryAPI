@@ -12,8 +12,6 @@ namespace PersonalDictionaryAPI.Data
         public DbSet<Language> Languages { get; set; }
         public APIDbContext(DbContextOptions<APIDbContext> options)
             : base(options)
-        {
-            Database.EnsureCreated();
-        }
+        {}
     }
 }
