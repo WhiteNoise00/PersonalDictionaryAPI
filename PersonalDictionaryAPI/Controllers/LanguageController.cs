@@ -8,6 +8,7 @@ namespace PersonalDictionaryAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LanguageController : Controller
     {
         private readonly APIDbContext _db;
@@ -63,7 +64,6 @@ namespace PersonalDictionaryAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
-
         
         [HttpPut("{id}")]
         public ActionResult EditLanguage(int? id, Language lg)

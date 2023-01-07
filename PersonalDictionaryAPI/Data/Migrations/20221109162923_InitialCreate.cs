@@ -49,6 +49,7 @@ namespace PersonalDictionaryAPI.Migrations
                     CategoryId = table.Column<int>(type: "int", nullable: true),
                     LanguageId = table.Column<int>(type: "int", nullable: true)
                 },
+
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Notes", x => x.Id);

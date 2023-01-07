@@ -14,7 +14,6 @@ namespace PersonalDictionaryAPI.Models
         public int? CategoryId { get; set; }
         public int? LanguageId { get; set; }
         public Category? Category { get; set; }
-        public Language? Language { get; set; }
-        
+        public Language? Language { get; set; }       
     }
 }

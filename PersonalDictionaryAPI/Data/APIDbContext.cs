@@ -10,8 +10,10 @@ namespace PersonalDictionaryAPI.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Note> Notes { get; set; }
         public DbSet<Language> Languages { get; set; }
+        public DbSet<User> Users { get; set; }
         public APIDbContext(DbContextOptions<APIDbContext> options)
             : base(options)
-        {}
+        {
+        }
     }
 }

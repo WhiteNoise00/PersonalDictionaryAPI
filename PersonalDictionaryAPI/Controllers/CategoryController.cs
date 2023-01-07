@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PersonalDictionaryAPI.Data;
 using PersonalDictionaryAPI.Models;
@@ -8,6 +9,7 @@ namespace PersonalDictionaryAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoryController : Controller
     {
         private readonly APIDbContext _db;
